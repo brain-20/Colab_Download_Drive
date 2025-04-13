@@ -1,5 +1,5 @@
 EXAMPLE SNIPPET with image to show how to transfer large files from GDrive to Colab.
-(View image in preview)
+(View image in preview and the code in code view)
 
 ![image](https://github.com/user-attachments/assets/d5373be0-2a3b-485c-846c-9e8a82ceb5be)
 

@@ -1,6 +1,9 @@
 EXAMPLE SNIPPET with image to show how to transfer large files from GDrive to Colab.
 (View image in preview and the code in code view)
 
+So note that I Download and extract each file.zip individually. Here I show the example of how I did this for 1 file. 
+Also note that You need to give permission in google drive so files can be copied. 
+
 ![image](https://github.com/user-attachments/assets/d5373be0-2a3b-485c-846c-9e8a82ceb5be)
 
 

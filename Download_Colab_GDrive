@@ -9,7 +9,7 @@ os.makedirs("content/dataset", exist_ok=True)
 # ---------------------------
 # Download and extract "train (1).zip"
 # ---------------------------
-train_id = "1-9ZqPFMLAZdecbHWjQ5xFmB1hnUya4TU"
+train_id = "1-9ZqPFMLAHdecbHWjQ5xFmM1hnUya4TU"
 train_file = "train.zip"
 if not os.path.exists(train_file):
     print("Downloading train dataset...")
@@ -23,7 +23,7 @@ else:
 # ---------------------------
 # Download and extract "test (1).zip"
 # ---------------------------
-test_id = "1XVksYeOf2rXoWLkqYR7xQAERdqCe9vYn"
+test_id = "1XVksYeOf2rXoWLkqYP7xPAERdqCe9vYn"
 test_file = "test.zip"
 if not os.path.exists(test_file):
     print("Downloading test dataset...")
@@ -36,7 +36,7 @@ else:
 # ---------------------------
 # Download and extract "images.zip"
 # ---------------------------
-images_id = "1kk4SQbo7epNmsOsBM-VN2s0V8lbKqlRQ"
+images_id = "1kk4SQbo7epQmsOsBM-VN2s0V8lbKqlRQ"
 images_file = "images.zip"
 if not os.path.exists(images_file):
     print("Downloading images dataset...")

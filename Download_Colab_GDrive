@@ -1,0 +1,49 @@
+# Install/upgrade gdown if not already available
+!pip install -q gdown --upgrade
+
+import os
+
+# Create a directory for the extracted dataset files if it doesn't already exist
+os.makedirs("content/dataset", exist_ok=True)
+
+# ---------------------------
+# Download and extract "train (1).zip"
+# ---------------------------
+train_id = "1-9ZqPFMLAZdecbHWjQ5xFmB1hnUya4TU"
+train_file = "train.zip"
+if not os.path.exists(train_file):
+    print("Downloading train dataset...")
+    # Build the URL manually to avoid the --id option
+    !gdown "https://drive.google.com/uc?id={train_id}" -O {train_file}
+    print("Extracting train dataset...")
+    !unzip -q {train_file} -d content/dataset
+else:
+    print(f"'{train_file}' already exists, skipping train download.")
+
+# ---------------------------
+# Download and extract "test (1).zip"
+# ---------------------------
+test_id = "1XVksYeOf2rXoWLkqYR7xQAERdqCe9vYn"
+test_file = "test.zip"
+if not os.path.exists(test_file):
+    print("Downloading test dataset...")
+    !gdown "https://drive.google.com/uc?id={test_id}" -O {test_file}
+    print("Extracting test dataset...")
+    !unzip -q {test_file} -d content/dataset
+else:
+    print(f"'{test_file}' already exists, skipping test download.")
+
+# ---------------------------
+# Download and extract "images.zip"
+# ---------------------------
+images_id = "1kk4SQbo7epNmsOsBM-VN2s0V8lbKqlRQ"
+images_file = "images.zip"
+if not os.path.exists(images_file):
+    print("Downloading images dataset...")
+    !gdown "https://drive.google.com/uc?id={images_id}" -O {images_file}
+    print("Extracting images dataset...")
+    !unzip -q {images_file} -d content/dataset
+else:
+    print(f"'{images_file}' already exists, skipping images download.")
+
+print("\nAll files downloaded and extracted into the 'content/dataset' folder.")
